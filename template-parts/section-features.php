@@ -1,0 +1,14 @@
+<?php // --- Fichier: template-parts/section-features.php --- ?>
+<section id="features" class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-12 aos-animate">
+            <h2 class="text-3xl md:text-4xl font-bold text-slate-900" data-lang="featuredTitle">À la une</h2>
+            <p class="mt-4 text-lg text-slate-600" data-lang="featuredSubtitle">Les dernières nouvelles de notre écosystème.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="aos-animate bg-slate-50 rounded-xl overflow-hidden shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group"><img src="https://placehold.co/600x400/0d9488/ffffff?text=Startup" alt="Image d'une startup" class="w-full h-48 object-cover"><div class="p-6"><span class="text-sm font-semibold text-teal-600 bg-teal-100 px-2 py-1 rounded-full" data-lang="tagStartup">STARTUP</span><h3 class="mt-4 text-xl font-bold text-slate-900">Forêt IA</h3><p class="mt-2 text-slate-600" data-lang="featuredItem1Desc">Une jeune pousse qui utilise l'intelligence artificielle pour optimiser la gestion forestière durable.</p></div></div>
+            <div class="aos-animate bg-slate-50 rounded-xl overflow-hidden shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group" style="transition-delay: 100ms;"><img src="https://placehold.co/600x400/10b981/ffffff?text=Projet" alt="Image d'un projet" class="w-full h-48 object-cover"><div class="p-6"><span class="text-sm font-semibold text-emerald-600 bg-emerald-100 px-2 py-1 rounded-full" data-lang="tagCommunity">PROJET COMMUNAUTAIRE</span><h3 class="mt-4 text-xl font-bold text-slate-900">La Tuque Connectée</h3><p class="mt-2 text-slate-600" data-lang="featuredItem2Desc">Déploiement d'un réseau de capteurs pour mesurer la qualité de l'air en temps réel au centre-ville.</p></div></div>
+            <div class="aos-animate bg-slate-50 rounded-xl overflow-hidden shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group" style="transition-delay: 200ms;"><img src="https://placehold.co/600x400/f59e0b/ffffff?text=Événement" alt="Image d'un événement" class="w-full h-48 object-cover"><div class="p-6"><span class="text-sm font-semibold text-amber-600 bg-amber-100 px-2 py-1 rounded-full" data-lang="tagEvent">ÉVÉNEMENT</span><h3 class="mt-4 text-xl font-bold text-slate-900" data-lang="featuredItem3Title">Sommet de l'Innovation</h3><p class="mt-2 text-slate-600" data-lang="featuredItem3Desc">Rejoignez-nous le mois prochain pour une journée de conférences et de réseautage avec les leaders locaux.</p></div></div>
+        </div>
+    </div>
+</section>

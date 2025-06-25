@@ -13,6 +13,8 @@ Planifier des aventures personnalisées.
 Suggérer des noms de startups.
 🔧 Entièrement Personnalisable via le Customizer de WordPress.
 📱 Design Responsive construit avec Tailwind CSS.
+
+
 English Version
 InnovLaTuque - Dynamic WordPress Theme
 

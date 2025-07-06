@@ -5,7 +5,7 @@
  */
 
 if ( ! defined( 'INNOVLATUQUE_VERSION' ) ) {
-	define( 'INNOVLATUQUE_VERSION', '2.0.0' );
+	define( 'INNOVLATUQUE_VERSION', '3.0.4' );
 }
 
 /**
@@ -16,6 +16,7 @@ function innovlatuque_setup() {
 	add_theme_support( 'post-thumbnails' );
 	register_nav_menus( [ 'primary' => esc_html__( 'Menu Principal', 'innovlatuquetheme' ) ] );
 	add_theme_support( 'html5', [ 'search-form', 'comment-form', 'comment-list', 'gallery', 'caption', 'style', 'script' ] );
+    add_theme_support( 'custom-logo' );
 }
 add_action( 'after_setup_theme', 'innovlatuque_setup' );
 
@@ -39,5 +40,6 @@ add_action( 'wp_enqueue_scripts', 'innovlatuque_enqueue_scripts' );
 /**
  * Charge les fichiers additionnels du thème.
  */
-require get_template_directory() . '/inc/customizer.php';
-require get_template_directory() . '/inc/class-tailwind-nav-walker.php';
+$theme_inc_path = get_template_directory() . '/inc';
+require_once $theme_inc_path . '/customizer.php';
+require_once $theme_inc_path . '/class-tailwind-nav-walker.php';

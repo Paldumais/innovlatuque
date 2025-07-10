@@ -1,9 +1,8 @@
-Thème WordPress InnovLaTuque 
-
+Thème WordPress InnovLaTuque V4
 Un thème WordPress professionnel, performant et sécuritaire pour le portail d'innovation de La Tuque.
 
 Caractéristiques
-Mode Sombre Élégant : Interrupteur dans le pied de page avec mémorisation du choix.
+Mode Sombre Élégant : Interrupteur dans le pied de page avec mémorisation du choix de l'utilisateur.
 
 Bannière Interactive : Animation d'aurores boréales qui réagit à la souris.
 
@@ -22,7 +21,6 @@ Multilingue : Prêt pour le français et l'anglais via un fichier de traduction 
 Code Robuste : Refactorisé pour la performance, la sécurité et le respect des standards WordPress.
 
 Installation
-
 Compressez le dossier du thème (innovlatuquetheme) en un fichier .zip.
 
 Dans votre tableau de bord WordPress, allez dans Apparence > Thèmes > Ajouter.
@@ -32,7 +30,6 @@ Cliquez sur Téléverser un thème et sélectionnez votre fichier .zip.
 Installez et activez le thème.
 
 Configuration Requise
-
 Clé API Gemini :
 
 Allez dans Apparence > Personnaliser.

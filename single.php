@@ -8,8 +8,8 @@
 get_header();
 ?>
 
-<div class="bg-white dark:bg-slate-900">
-    <div class="container mx-auto px-6 py-12 lg:py-16">
+<div class="bg-white dark:bg-slate-900 py-12 lg:py-16">
+    <div class="container mx-auto px-6">
         <?php
         while ( have_posts() ) :
             the_post();

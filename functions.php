@@ -5,7 +5,7 @@
  */
 
 if ( ! defined( 'INNOVLATUQUE_VERSION' ) ) {
-	define( 'INNOVLATUQUE_VERSION', '4.2.1' );
+	define( 'INNOVLATUQUE_VERSION', '4.2.4' );
 }
 
 /**
@@ -25,44 +25,28 @@ add_action( 'after_setup_theme', 'innovlatuque_setup' );
  */
 function innovlatuque_widgets_init() {
     register_sidebar( [
-        'name'          => esc_html__( 'Pied de page - Colonne 1', 'innovlatuquetheme' ),
-        'id'            => 'footer-1',
-        'description'   => esc_html__( 'Widgets pour la première colonne du pied de page.', 'innovlatuquetheme' ),
-        'before_widget' => '<div id="%1$s" class="widget %2$s">',
-        'after_widget'  => '</div>',
-        'before_title'  => '<h4 class="text-lg font-semibold text-white mb-4">',
-        'after_title'   => '</h4>',
+        'name'          => esc_html__( 'Pied de page - Colonne 1', 'innovlatuquetheme' ), 'id' => 'footer-1',
+        'before_widget' => '<div id="%1$s" class="widget %2$s">', 'after_widget'  => '</div>',
+        'before_title'  => '<h4 class="text-lg font-semibold text-white mb-4">', 'after_title'   => '</h4>',
     ] );
     register_sidebar( [
-        'name'          => esc_html__( 'Pied de page - Colonne 2', 'innovlatuquetheme' ),
-        'id'            => 'footer-2',
-        'description'   => esc_html__( 'Widgets pour la deuxième colonne du pied de page.', 'innovlatuquetheme' ),
-        'before_widget' => '<div id="%1$s" class="widget %2$s">',
-        'after_widget'  => '</div>',
-        'before_title'  => '<h4 class="text-lg font-semibold text-white mb-4">',
-        'after_title'   => '</h4>',
+        'name'          => esc_html__( 'Pied de page - Colonne 2', 'innovlatuquetheme' ), 'id' => 'footer-2',
+        'before_widget' => '<div id="%1$s" class="widget %2$s">', 'after_widget'  => '</div>',
+        'before_title'  => '<h4 class="text-lg font-semibold text-white mb-4">', 'after_title'   => '</h4>',
     ] );
     register_sidebar( [
-        'name'          => esc_html__( 'Pied de page - Colonne 3', 'innovlatuquetheme' ),
-        'id'            => 'footer-3',
-        'description'   => esc_html__( 'Widgets pour la troisième colonne du pied de page.', 'innovlatuquetheme' ),
-        'before_widget' => '<div id="%1$s" class="widget %2$s">',
-        'after_widget'  => '</div>',
-        'before_title'  => '<h4 class="text-lg font-semibold text-white mb-4">',
-        'after_title'   => '</h4>',
+        'name'          => esc_html__( 'Pied de page - Colonne 3', 'innovlatuquetheme' ), 'id' => 'footer-3',
+        'before_widget' => '<div id="%1$s" class="widget %2$s">', 'after_widget'  => '</div>',
+        'before_title'  => '<h4 class="text-lg font-semibold text-white mb-4">', 'after_title'   => '</h4>',
     ] );
     register_sidebar( [
-        'name'          => esc_html__( 'Pied de page - Colonne 4', 'innovlatuquetheme' ),
-        'id'            => 'footer-4',
+        'name'          => esc_html__( 'Pied de page - Colonne 4', 'innovlatuquetheme' ), 'id' => 'footer-4',
         'description'   => esc_html__( 'Widgets pour la quatrième colonne du pied de page.', 'innovlatuquetheme' ),
-        'before_widget' => '<div id="%1$s" class="widget %2$s">',
-        'after_widget'  => '</div>',
-        'before_title'  => '<h4 class="text-lg font-semibold text-white mb-4">',
-        'after_title'   => '</h4>',
+        'before_widget' => '<div id="%1$s" class="widget %2$s">', 'after_widget'  => '</div>',
+        'before_title'  => '<h4 class="text-lg font-semibold text-white mb-4">', 'after_title'   => '</h4>',
     ] );
 }
 add_action( 'widgets_init', 'innovlatuque_widgets_init' );
-
 
 /**
  * Enqueue les scripts et les styles.
@@ -78,7 +62,8 @@ function innovlatuque_enqueue_scripts() {
 
     wp_enqueue_script( 'tailwindcss', 'https://cdn.tailwindcss.com', [], null, false );
     wp_enqueue_script( 'leaflet-js', 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.js', [], '1.9.4', true );
-    wp_enqueue_script( 'innovlatuque-main-js', get_template_directory_uri() . '/assets/js/main.js', ['leaflet-js'], INNOVLATUQUE_VERSION, true );
+    wp_enqueue_script( 'tone-js', 'https://cdnjs.cloudflare.com/ajax/libs/tone/14.7.77/Tone.js', [], '14.7.77', true );
+    wp_enqueue_script( 'innovlatuque-main-js', get_template_directory_uri() . '/assets/js/main.js', ['leaflet-js', 'tone-js'], INNOVLATUQUE_VERSION, true );
     
     // Passe les données de PHP à JavaScript de manière sécuritaire
     wp_localize_script('innovlatuque-main-js', 'wpData', [

@@ -11,7 +11,10 @@
         .hero-section { position: relative; overflow: hidden; background-color: #f8fafc; }
         html.dark .hero-section { background-color: #0f172a; }
         #hero-canvas { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0; }
-        .hero-content { position: relative; z-index: 1; }
+        .hero-content { position: relative; z-index: 10; }
+        .hero-content h1 { text-shadow: 0 1px 3px rgba(0,0,0,0.2); }
+        html.dark .hero-content h1 { text-shadow: 0 1px 5px rgba(0,0,0,0.5); }
+        .parallax-layer { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-position: bottom center; background-repeat: no-repeat; background-size: cover; z-index: 5; will-change: transform; }
         .mobile-menu-panel { transition: transform 0.3s ease-in-out; transform: translateX(100%); }
         .mobile-menu-panel.is-open { transform: translateX(0); }
         .modal-overlay { transition: opacity 0.3s ease; }

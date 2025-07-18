@@ -1,7 +1,9 @@
-Thème WordPress InnovLaTuque V4
+Thème WordPress InnovLaTuque V4.2.2
 Un thème WordPress professionnel, performant et sécuritaire pour le portail d'innovation de La Tuque.
 
 Caractéristiques
+Architecture Sécurisée : Les appels à l'API Gemini passent par un proxy WordPress pour protéger la clé API.
+
 Mode Sombre Élégant : Interrupteur dans le pied de page avec mémorisation du choix de l'utilisateur.
 
 Bannière Interactive : Animation d'aurores boréales qui réagit à la souris.

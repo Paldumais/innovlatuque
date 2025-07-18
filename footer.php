@@ -24,7 +24,7 @@
                 <?php endif; ?>
             </div>
             <div class="mt-12 border-t border-slate-700 pt-8 text-center text-slate-400">
-                <p class="text-sm"><span data-lang="creationCredit">Une création de</span> <a href="https://pxlbase.com" target="_blank" rel="noopener noreferrer" class="font-semibold text-emerald-400 hover:underline">Pierre-Alexandre Lévesque Dumais</a></p>
+                <p class="text-sm"><span data-lang="creationCredit">Une création de</span> <a href="https://pxlbase.com" target="_blank" rel="noopener noreferrer" class="font-semibold text-emerald-400 hover:underline">Pierre-Alexandre</a></p>
                 <p class="mt-2">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>. <span data-lang="footerRights">Tous droits réservés.</span></p>
             </div>
         </div>

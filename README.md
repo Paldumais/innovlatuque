@@ -1,4 +1,4 @@
-Thème WordPress InnovLaTuque V4.2.2
+Thème WordPress InnovLaTuque
 Un thème WordPress professionnel, performant et sécuritaire pour le portail d'innovation de La Tuque.
 
 Caractéristiques

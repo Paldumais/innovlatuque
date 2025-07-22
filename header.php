@@ -24,6 +24,10 @@
         .adventure-checkbox:checked + label { border-color: var(--emerald-500); background-color: var(--emerald-500); color: white !important; }
         html.dark .adventure-checkbox:checked + label { background-color: var(--emerald-600); border-color: var(--emerald-600); }
         #dark-mode-toggle #dark-mode-indicator { transition: transform 0.3s ease; }
+        /* Swiper Carousel Styles */
+        .swiper-pagination-bullet { background-color: #fff; opacity: 0.7; }
+        .swiper-pagination-bullet-active { background-color: var(--emerald-500); opacity: 1; }
+        .swiper-button-next, .swiper-button-prev { color: #fff; }
     </style>
     <?php wp_head(); ?>
 </head>
